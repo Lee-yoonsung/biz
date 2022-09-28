@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LG9XQ64XN3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LG9XQ64XN3');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +19,17 @@
     <title>Welcome to yoonsung's site</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="./images/logo.jpg" alt="CI">
         <h1>Yoonsung Site</h1>
     </header>
     <nav>
         <ul>
-            <li>소개</li>
-            <li>쇼핑</li>
-            <li>패키지</li>
-            <li>커뮤니티</li>
+            <ul>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">쇼핑</a></li>
+                <li><a href="#">패키지</a></li>
+                <li><a href="#">커뮤니티</a></li>
         </ul>
       
     </nav>
@@ -74,7 +85,7 @@
             <div class="link">
                 <a href="http://mis.deu.ac.kr">경영정보학과 사이트</a><br>
                 <a href="./gallery.html">겔러리</a><br>
-                <a href=""></a> 
+                <a href="#home">시작이동</a> 
             </div>
         </aside>
     </section>
