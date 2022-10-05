@@ -17,9 +17,31 @@
     <meta name="keywords" content="ga, IT 관련블로그, 경영정보">
     <meta name="author" content="이윤성">
     <title>Welcome to yoonsung's site</title>
+    <script src="https://kit.fontawesome.com/e37d6e940d.js" crossorigin="anonymous"></script>
+    <style>
+        header,footer{
+            height: 100px;
+        }
+        footer{
+            background-color: gray;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <header id="home">
+        <i class="fa-solid fa-burger"></i>
         <img src="./images/logo.jpg" alt="CI">
         <h1>Yoonsung Site</h1>
     </header>
@@ -34,6 +56,7 @@
       
     </nav>
     <section>
+        <div class="content">
         <article>
             <div class="bigdata">
                 <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
@@ -81,14 +104,28 @@
                 <iframe width="70%" height="400" src="./gallery.html" frameborder="0"></iframe>
             </div>
         </article>
+        </div>
         <aside>
             <div class="link">
-                <a href="http://mis.deu.ac.kr">경영정보학과 사이트</a><br>
+                <a href="http://mis.deu.ac.kr"target="_blank">경영정보학과 사이트</a><br>
                 <a href="./gallery.html">겔러리</a><br>
                 <a href="#home">시작이동</a> 
             </div>
+            <div class="login">
+                <h2>    로그인</h2>
+                <form action="#"method="get">
+                    회원ID<input type="text" name="id" id=""><br>
+                    비밀번호<input type="password" name="pw" id=""><br>
+                    남자 <input type="radio" name="gender" value="1" id="">
+                    여자 <input type="radio" name="gender" value="2" id="">
+                    <input type="submit" value="로그인">
+                    <input type="reset" value="재설정"><br>
+                </form>
+            </div>
         </aside>
     </section>
-    <footer>저작권과 주소</footer>
+    <footer>저작권과 주소
+        <i class="fa-brands fa-youtube"></i>
+    </footer>
 </body>
 </html>
