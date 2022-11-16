@@ -10,6 +10,14 @@
 
   gtag('config', 'G-LG9XQ64XN3');
 </script>
+    <script>
+      function cartadd(){
+        dataLayer.push({
+        event'  : cartadd
+        'varcart'  :  'computer',
+      })
+      alert ("장바구니에 추가 되엇습니다")
+      </script>
     <title>yoonsung's shopping mall</title>
     <script src="https://kit.fontawesome.com/775c063c3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/mystyle.css">
@@ -64,14 +72,14 @@
         <input type="button" value="쇼핑카트에 추가하기" class="cart"/>
     </div>
     <div class="product2">
-        <img src="images/notebook.png" width="100" height="100" />
+        <img src="images/notebook.png" width="100" height="100" onclick="cartadd"() />
         <p>
             Full-HD로 선명한 화면, ISP패널로
   시야각도 좋다!  CPU: 인텔 코어i7 3630 QM, CPU: 인텔 코어i7 3630 QM
             <br />
             가격: 1,200,000원
         </p>
-        <input type="button" value="쇼핑카트에 추가하기" />
+        <input type="button" value="쇼핑카트에 추가하기" onclick="cartadd"()/>
     </div>
     <div class="product3">
         <img src="images/tshirt.png" width="100" height="100" />
@@ -81,7 +89,7 @@
             <br />
             가격: 1,200,000원
         </p>
-        <input type="button" value="쇼핑카트에 추가하기"  id="cartproduct1"/>
+        <input type="button" value="쇼핑카트에 추가하기"  id="cartproduct1" onclick="cartadd"()/>
     </div>
     <div calss="buttonLink">
       <button type="button" id="payment"> "구매하기"</button>
